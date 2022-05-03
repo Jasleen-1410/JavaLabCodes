@@ -1,0 +1,79 @@
+<!-- Performed By: Jasleen Minhas / 20BCS6897 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jas Cosmetics Auction</title>
+    <style>
+        body {
+            font-size: 30px;
+        }
+
+        h2 {
+            color: rgb(248, 65, 135);
+        }
+
+        .container {
+            border: 2px dashed pink;
+            border-radius: 25px;
+            margin-left: 25vh;
+            margin-right: 25vh;
+            margin-top: 50px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        input,select {
+            border: 1px solid pink;
+            border-radius: 5px;
+            width: 50%;
+            height: 22px;
+            font-size: 16px;
+        }
+
+        .btn {
+            width: 200px;
+            height: 70px;
+            font-size: 20px;
+            border: 2px solid pink;
+            border-radius: 25px;
+            color: white;
+            background-color: rgb(248, 65, 135);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <H2>Welcome to Jas Cosmetics Auction</H2>
+        </center>
+        <form action="CostemticsAuctionServlet" method="post">
+            <center>
+                Buyer's Name: <input type="text" name="userName" />
+                <br><br>
+
+                Cosmetic's Name:
+                <select name="productName">
+                    <option>Foundation</option>
+                    <option>Lipstick</option>
+                    <option>High-lighter</option>
+                    <option>Primer</option>
+                    <option>Blush</option>
+                    <option>Eye-linear</option>
+                    <option>Mascara</option>
+                </select>
+                <br><br>
+
+                Bid Value: <input type="text" name="bidValue" />
+                <br><br>
+
+                <input type="submit" value="Register" class="btn" />
+            </center>
+
+        </form>
+    </div>
+</body>
+</html>
